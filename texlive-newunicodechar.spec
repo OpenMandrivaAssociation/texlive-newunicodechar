@@ -1,3 +1,9 @@
+# revision 21463
+# category Package
+# catalog-ctan /macros/latex/contrib/newunicodechar
+# catalog-date 2011-02-18 20:19:38 +0100
+# catalog-license lppl1.3
+# catalog-version 1.0
 Name:		texlive-newunicodechar
 Version:	1.0
 Release:	1
@@ -47,6 +53,7 @@ typed Unicode character, and <code> is its replacement.
 #- source
 %doc %{_texmfdistdir}/source/latex/newunicodechar/newunicodechar.dtx
 %doc %{_texmfdistdir}/source/latex/newunicodechar/newunicodechar.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,3 +64,5 @@ typed Unicode character, and <code> is its replacement.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
