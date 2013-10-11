@@ -1,12 +1,12 @@
-# revision 21463
+# revision 28253
 # category Package
 # catalog-ctan /macros/latex/contrib/newunicodechar
-# catalog-date 2011-02-18 20:19:38 +0100
+# catalog-date 2012-11-13 18:34:11 +0100
 # catalog-license lppl1.3
-# catalog-version 1.0
+# catalog-version 1.1
 Name:		texlive-newunicodechar
-Version:	1.0
-Release:	2
+Version:	1.1
+Release:	1
 Summary:	Definitions of the meaning of Unicode characters
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/newunicodechar
@@ -22,8 +22,8 @@ Requires(post):	texlive-kpathsea
 %description
 The package provides a friendly interface for defining the
 meaning of Unicode characters. The document should be processed
-by (pdf)LaTeX with \usepackage[utf8]{inputenc} or by
-XeLaTeX/LuaLaTeX. The command provided is
+by (pdf)LaTeX with the unicode option of inputenc or inputenx,
+or by XeLaTeX/LuaLaTeX. The command provided is
 \newunicodechar{<char>}{<code>} where <char> is a directly-
 typed Unicode character, and <code> is its replacement.
 
@@ -53,17 +53,3 @@ typed Unicode character, and <code> is its replacement.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 754339
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 719114
-- texlive-newunicodechar
-- texlive-newunicodechar
-- texlive-newunicodechar
-- texlive-newunicodechar
-
