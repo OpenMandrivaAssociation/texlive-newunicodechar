@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-newunicodechar
 Version:	1.0
-Release:	2
+Release:	3
 Summary:	Definitions of the meaning of Unicode characters
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/newunicodechar
