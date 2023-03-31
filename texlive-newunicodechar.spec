@@ -1,6 +1,6 @@
 Name:		texlive-newunicodechar
 Version:	47382
-Release:	1
+Release:	2
 Summary:	Definitions of the meaning of Unicode characters
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/newunicodechar
